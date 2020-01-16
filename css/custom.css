@@ -1,0 +1,363 @@
+.subtext {
+  font-family: HKGrotesk;
+  font-size: 19px;
+  font-weight: 500;
+}
+.title {
+  font-family: HKGrotesk;
+  font-size: 27px;
+  font-weight: bold;
+  color: #2a3844;
+}
+
+.typeOfProject {
+    display: flex;
+}
+
+.Start-a-Project {
+  font-family: HKGrotesk;
+  font-size: 19px;
+  font-weight: 500;
+  color: #5d677e;
+}
+
+.projectTitle {
+  font-family: HKGrotesk;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.projectCard {
+    /* padding: 20px; */
+    border: solid 1px #dde2e9;
+    border-radius: 6px;
+}
+
+.countryInput {
+  width:35%;
+}
+
+.cityInput {
+  width:30%;
+}
+
+.startDateInput {
+  padding: 0px 0px 0px 12px !important;
+}
+
+.endDateInput {
+  padding: 0px 0px 0px 12px !important;
+}
+
+.info-ico {
+  margin: auto;
+  display: block;
+}
+
+.radio-button-default{
+  background: url('../img/radio-unchecked.png') no-repeat 0;
+  background-position: right top;
+  float: right;
+  height:24px;
+}
+
+.crowdfunding_img {
+  background: url('../img/crowdfunding.png') no-repeat 0;
+  height:96px;
+  background-position: center;
+}
+
+.crowdfunding_img_hover {
+  background: url('../img/crowdfunding-active.png') no-repeat 0;
+  height:96px;
+  background-position: center;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.promotions_img {
+  background: url('../img/promotions.png') no-repeat 0;
+  height:96px;
+  background-position: center;
+}
+
+.promotions_img_hover {
+  background: url('../img/promotions-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+  }
+
+.socialgiving_img {
+  background: url('../img/socialgiving.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+.socialgiving_img_hover {
+  background: url('../img/socialgiving-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+
+.socialchange_img {
+  background: url('../img/socialchange.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+
+.socialchange_img_hover {
+  background: url('../img/socialchange-active.png') no-repeat 0;
+  background-position: center;
+  height:96px;
+}
+
+.noteinstr {
+  float:right;
+}
+
+
+.projectCard:hover{
+  border: solid 1px #16c0ef;
+}
+
+.close {
+  font-family: HKGrotesk !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  color: #7c8796 !important;
+}
+
+.proceedButton {
+    width: 252px;
+    height: 50px;
+    border-radius: 3px !important;
+    background-color: #16c0ef !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.backButton {
+  width: 252px;
+  height: 50px;
+  border-radius: 3px !important;
+  border: solid 1px #e0e6ee !important;
+  color: #16c0ef !important;
+  font-weight: bold !important;
+}
+
+.proceedFooter {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.newProjectHeader {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.modal-card-head {
+    background-color: #ffffff !important;
+}
+
+.project-title-input {
+  font-family: HKGrotesk;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #2a3844 !important;
+}
+
+.syne-inputbox {
+  border-radius: 3px;
+  padding: 0px 0px 0px 12px;
+  border: solid 1px #dde2e9;
+}
+
+.syne-project-description {
+  border: none !important;
+  font-family: HKGrotesk;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  color: #bac3cf !important;
+}
+
+.Short-description-ab {
+  font-family: HKGrotesk;
+  font-size: 17px;
+  font-weight: 600;
+  color: #bac3cf;
+  padding: 10px 0px 0px 12px;
+}
+
+.syne-input-label{
+  font-family: HKGrotesk;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7c8796;
+  padding: 0px 0px 0px 12px;
+
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none !important;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 12px;
+}
+
+.popular-categories {
+  font-size: 15px;
+  font-weight: bold;
+  color: #bac3cf;
+}
+
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #16c0ef !important;
+  transition: width .6s ease;
+}
+
+/* //Post Page// */
+
+.post-page-bg {
+  background-color: #f9fafc;
+}
+.post-page-header {
+  background-color: #ffffff;
+  border-bottom: 1px #f9fafc;
+}
+
+.coverPhoto {
+  height: 108px;
+}
+
+.user-name {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  color: #7c8796;
+}
+
+.post-card {
+  border-radius: 4px;
+  border: solid 1px #e0e6ee;
+  background-color: #ffffff;
+}
+
+.recommended-projects-text {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2a3844;
+}
+
+.project-target {
+  font-family: HKGrotesk;
+  font-size: 12px;
+  color: #2a3844;
+}
+
+.recommndede-project-photo {
+  height:67px;
+}
+
+.recommended-project-disc {
+  font-family: HKGrotesk;
+  font-size: 12px;
+  color: #5d677e;
+}
+
+.recommended-project-name {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a3844;
+}
+
+.full-name {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2a3844;
+}
+
+.hello-user-text {
+  font-family: HKGrotesk;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a3844;
+}
+
+.write-post-text {
+  font-family: HKGrotesk;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.menu-items {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5d677e;
+}
+
+.post-image {
+  height: 260px;
+}
+
+.post-project-caption {
+  font-family: HKGrotesk;
+  font-size: 17px;
+  color: #0db2e0;
+  font-weight: bold;
+}
+
+.post-project-desc {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  color: #5d677e;
+  font-weight: normal;
+}
+
+.raised-amount {
+  font-family: HKGrotesk;
+  font-size: 13px;
+  font-weight: bold;
+  color: #2a3844;
+}
+
+.follower-count {
+  font-weight: bold;
+  color: #16c0ef;
+}
+
+.writePost {
+  border-radius: 4px;
+  border: solid 1px #e0e6ee;
+  background-color: #ffffff;
+}
+
+.profile-completion {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(57, 64, 79, 0.1);
+  background-color: #ffffff;
+}
+
+.left-tab, .right-tab {
+  border-radius: 4px;
+  border: 2px solid #e0e6ee;
+  background-color: #ffffff;
+}

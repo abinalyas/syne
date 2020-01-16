@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="#3D0082" name="msapplication-TileColor">
+  <meta content="#3D0082" name="theme-color">
+  <title>SYNE</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- <div class="wrapper">
+    <div class="full-wrapper header">
+      <div class="main-wrapper">
+        <div class="headerwrap flex">
+          <div class="header-l w50 flex flex-h-start flex-v-center">
+            <div class="logo">
+              <img src="img/syne-logo.png" alt="logo">
+            </div>
+            <div class="header-menu">
+              <ul>
+                <li><a class="txt-blue f14 modal-button" data-toggle="modal" data-target="#exampleModal">Start a
+                    Project</a></li>
+                <li><a href="#" class="f14">Explore Projects</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="modal-header d-flex align-items-center">
+    <div class="logo">
+      <img src="img/syne-logo.png" alt="logo">
+    </div>
+    <div>
+      <button class="delete close" type="button" data-dismiss="modal" aria-label="close">Close</button>
+    </div>
+  </div>
+  <div class="progress" style="height: 1px;">
+    <div class="progress-bar" id="progressbar" role="progressbar" style="width: 0%;" aria-valuenow="25"
+      aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+
+  <div class="container">
+    <div role="document">
+      <div class="">
+
+        <div class="modal-body p-5">
+          <div id="startProject1">
+
+            <div class="Start-a-Project ml-3">Start a Project</div>
+            <div class="title pt-2 ml-3">What type of project do you want to start?</div>
+
+            <div class="typeOfProject d-flex justify-content-around flex-wrap pt-5">
+
+              <div id="crowdfunding" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div class="radio-button-default mx-3 mt-3"></div>
+                <div class="px-5 pt-3 pb-5">
+                  <div id="crowdfunding_img" class="crowdfunding_img"></div>
+                  <div class="projectTitle pt-4">Crowdfunding</div>
+                  <img class="info-ico pt-1" src="img/info-grey.png">
+                </div>
+              </div>
+
+              <div id="socialgiving" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div class="radio-button-default mx-3 mt-3"></div>
+                <div class="px-5 pt-3 pb-5">
+                  <div id="socialgiving_img" class="socialgiving_img"></div>
+                  <div class="projectTitle pt-4">Social Giving</div>
+                  <img class="info-ico pt-1" src="img/info-grey.png">
+                </div>
+              </div>
+
+              <div id="promotions" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div class="radio-button-default mx-3 mt-3"></div>
+                <div class="px-5 pt-3 pb-5">
+                  <div id="promotions_img" class="promotions_img"></div>
+                  <div class="projectTitle pt-4">Promotions</div>
+                  <img class="info-ico pt-1" src="img/info-grey.png">
+                </div>
+              </div>
+
+              <div id="socialchange" class="projectCard d-flex flex-column justify-content-center flex-wrap m-3">
+                <div class="radio-button-default mx-3 mt-3"></div>
+                <div class="px-5 pt-3 pb-5">
+                  <div id="socialchange_img" class="socialchange_img"></div>
+                  <div class="projectTitle pt-4">Social Change</div>
+                  <img class="info-ico pt-1" src="img/info-grey.png">
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <button onclick="proceed(1)" type="button" class="btn  proceedButton is-success mt-5">Proceed</button>
+            </div>
+
+          </div>
+
+          <div id="startProject2" style="display: none;">
+
+            <div class="Start-a-Project ml-3">1/6</div>
+            <div class="title pt-2 ml-3">Enter your project category </div>
+
+            <div class="syne-inputbox mt-2 ml-3">
+              <input class="" type="text" name="search" placeholder="Search Categories">
+            </div>
+
+            <div>
+
+              <div class="popular-categories mt-5 ml-3">Popular Categories</div>
+
+              <div class="typeOfProject d-flex justify-content-around flex-wrap pt-2">
+
+                <div id="crowdfunding" class="projectCard p-5 m-3 d-flex flex-column justify-content-center flex-wrap">
+                  <!-- <img src="img/crowdfunding-active.png" style="height:96px"> -->
+                  <div id="crowdfunding_img" class="crowdfunding_img"></div>
+                  <div class="projectTitle pt-4">Crowdfunding</div>
+                </div>
+
+                <div id="socialgiving" class="projectCard p-5 m-3 d-flex flex-column justify-content-center">
+                  <div id="socialgiving_img" class="socialgiving_img"></div>
+                  <div class="projectTitle pt-4">Social Giving</div>
+                </div>
+
+                <div id="promotions" class="projectCard p-5 m-3 d-flex flex-column justify-content-center">
+                  <div id="promotions_img" class="promotions_img"></div>
+                  <div class="projectTitle pt-4">Promotions</div>
+                </div>
+
+                <div id="socialchange" class="projectCard p-5 m-3 d-flex flex-column justify-content-center">
+                  <div id="socialchange_img" class="socialchange_img"></div>
+                  <div class="projectTitle pt-4">Social Change</div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="d-flex justify-content-around">
+              <button onclick="back(2)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5">Back</button>
+              <button onclick="proceed(2)" id="startProject1-proceed" type="button"
+                class="btn  proceedButton is-success mt-5">Proceed</button>
+            </div>
+
+          </div>
+
+          <div id="startProject3" style="display: none;">
+            <div class="Start-a-Project">2/6</div>
+            <div class="title pt-2">Your Project Title</div>
+            <form>
+              <div class="form-group mt-4">
+                <div>
+                  <div class="syne-inputbox p-2">
+                    <label class="syne-input-label" for="title">Title</label>
+                    <input type="text" class="form-control project-title-input" placeholder="Title">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mt-4">
+                <div>
+                  <div class="syne-inputbox p-2">
+                    <label for="url" class="syne-input-label">Project URL</label>
+                    <input type="text" class="form-control project-title-input" placeholder="Project URL">
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3" class="form-group">
+                <div>
+                  <div class="syne-inputbox p-2">
+                    <label for="comment" class="Short-description-ab">Short description about project</label>
+                    <textarea class="form-control syne-project-description" rows="5" id="comment"></textarea>
+                  </div>
+                  <small class="noteinstr mt-1" class="form-text text-muted">In less than 60 words</small>
+                </div>
+              </div>
+            </form>
+            <div class="d-flex justify-content-around">
+              <button onclick="back(3)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5">Back</button>
+              <button onclick="proceed(3)" id="startProject1-proceed" type="button"
+                class="btn  proceedButton is-success mt-5">Proceed</button>
+            </div>
+          </div>
+
+          <div id="startProject4" style="display: none;">
+            <div class="Start-a-Project">3/6</div>
+            <div class="title pt-3 pl-2">Select Country</div>
+
+            <form class="pt-2">
+              <div class="d-flex">
+                <div class="countryInput m-2">
+                  <div class="syne-inputbox p-2">
+                    <input type="text" class="form-control project-title-input pl-2" placeholder="Enter Country Name">
+                  </div>
+                </div>
+                <div class="cityInput m-2">
+                  <div class="syne-inputbox p-2">
+                    <input type="text" class="form-control project-title-input" placeholder="Select City">
+                  </div>
+                </div>
+              </div>
+              <small class="pt-2 pl-2" class="form-text text-muted"> Select the country of your campaign / project, we will
+                set up the currency for you!</small>
+            </form>
+
+            <div class="title pt-2 pl-2">When to when?</div>
+
+            <form>
+              <div class="d-flex">
+                <div class="countryInput m-2">
+                  <div class="syne-inputbox p-2">
+                    <label for="url" class="syne-input-label">Start Date</label>
+                    <input type="text" class="startDateInput project-title-input">
+                  </div>
+                </div>
+                <div class="cityInput m-2">
+                  <div class="syne-inputbox p-2">
+                    <label for="url" class="syne-input-label">End Date</label>
+                    <input type="text" class="endDateInput project-title-input">
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="title pt-3 pl-2">Target Support</div>
+            <form>
+              <div class="countryInput m-2">
+                <div class="syne-inputbox p-2">
+                  <input type="text" class="form-control project-title-input">
+                </div>
+              </div>
+            </form>
+
+            <div class="d-flex justify-content-around">
+              <button onclick="back(4)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5">Back</button>
+              <button onclick="proceed(4)" id="startProject1-proceed" type="button"
+                class="btn  proceedButton is-success mt-5">Proceed</button>
+            </div>
+          </div>
+
+          <div id="startProject5" style="display: none;">
+            <div class="Start-a-Project">4/6</div>
+            <div class="title pt-2">Add Project Icon</div>
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" placeholder="Title">
+              </div>
+            </form>
+
+            <div class="title pt-2">Add More Photos</div>
+            <form>
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" placeholder="Title">
+              </div>
+
+            </form>
+
+            <div class="d-flex justify-content-around">
+              <button onclick="back(5)" id="startProject1-back" type="button"
+                class="btn  backButton is-success mt-5">Back</button>
+              <button onclick="proceed(5)" id="startProject1-proceed" type="button"
+                class="btn  proceedButton is-success mt-5">Proceed</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      $("#crowdfunding").mouseover(function () {
+        document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img')
+        document.getElementById('crowdfunding_img').classList.add('crowdfunding_img_hover');
+        document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img')
+
+      });
+    });
+
+    $(document).ready(function () {
+      $("#crowdfunding").mouseout(function () {
+        document.getElementById('crowdfunding_img').classList.remove('crowdfunding_img_hover')
+        document.getElementById('crowdfunding_img').classList.add('crowdfunding_img');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#socialgiving").mouseover(function () {
+        document.getElementById('socialgiving_img').classList.remove('socialgiving_img')
+        document.getElementById('socialgiving_img').classList.add('socialgiving_img_hover');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#socialgiving").mouseout(function () {
+        document.getElementById('socialgiving_img').classList.remove('socialgiving_img_hover')
+        document.getElementById('socialgiving_img').classList.add('socialgiving_img');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#promotions").mouseover(function () {
+        document.getElementById('promotions_img').classList.remove('promotions_img')
+        document.getElementById('promotions_img').classList.add('promotions_img_hover');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#promotions").mouseout(function () {
+        document.getElementById('promotions_img').classList.remove('promotions_img_hover')
+        document.getElementById('promotions_img').classList.add('promotions_img');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#socialchange").mouseover(function () {
+        document.getElementById('socialchange_img').classList.remove('socialchange_img')
+        document.getElementById('socialchange_img').classList.add('socialchange_img_hover');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#socialchange").mouseout(function () {
+        document.getElementById('socialchange_img').classList.remove('socialchange_img_hover')
+        document.getElementById('socialchange_img').classList.add('socialchange_img');
+      });
+    });
+
+    $(document).ready(function () {
+      $("#socialchange").mouseout(function () {
+        document.getElementById('socialchange_img').classList.remove('socialchange_img_hover')
+        document.getElementById('socialchange_img').classList.add('socialchange_img');
+      });
+    });
+
+    function proceed(i) {
+      console.log("startProject" + i);
+      document.getElementById("startProject" + i).style.display = "none";
+      document.getElementById("startProject" + (i + 1)).style.display = "block";
+      var progress = i * 20;
+      document.getElementById("progressbar").style.width = progress + "%";
+    }
+
+    function back(i) {
+      document.getElementById("startProject" + i).style.display = "none";
+      document.getElementById("startProject" + (i - 1)).style.display = "block";
+      var progress = (i - 2) * 20;
+      document.getElementById("progressbar").style.width = progress + "%";
+    }
+
+
+    document.querySelectorAll('.modal-button').forEach(function (el) {
+      el.addEventListener('click', function () {
+        var target = document.querySelector(el.getAttribute('data-target'));
+
+        target.classList.add('is-active');
+
+        target.querySelector('.delete').addEventListener('click', function () {
+          target.classList.remove('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
