@@ -3,6 +3,15 @@
   font-size: 19px;
   font-weight: 500;
 }
+
+.input-group-append {
+  display: none !important;
+}
+
+.modal-header {
+  border: none !important;
+}
+
 .title {
   font-family: HKGrotesk;
   font-size: 27px;
@@ -12,6 +21,18 @@
 
 .typeOfProject {
     display: flex;
+}
+
+.typeOfCategory {
+  display: table !important;
+  width: 680px; 
+  height: 300px; 
+  overflow-x: scroll;
+  white-space:no-wrap;
+}
+
+.categoryList {
+  display: table-row;
 }
 
 .Start-a-Project {
@@ -31,6 +52,16 @@
     /* padding: 20px; */
     border: solid 1px #dde2e9;
     border-radius: 6px;
+}
+
+.categoryCard {
+  border: solid 1px #dde2e9;
+  display: table-cell !important;
+  border-radius: 6px;
+
+  margin:20px;
+  width:300px;
+  height:100px;
 }
 
 .countryInput {
